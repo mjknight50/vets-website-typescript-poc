@@ -1,0 +1,7 @@
+{
+  "appName": "Pensions - Version 2.0",
+  "entryFile": "./pensions-v2-entry.tsx",
+  "entryName": "pensions-v2",
+  "rootUrl": "/pensions-v2",
+  "productId": "7d62095c-5fe0-41e5-c093-39c2b1e5953e"
+}

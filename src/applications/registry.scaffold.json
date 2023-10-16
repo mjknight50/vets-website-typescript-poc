@@ -126,5 +126,10 @@
     "appName": "Proof of Concept with Typescript",
     "rootUrl": "/poc-ts",
     "entryName": "poc-ts"
+  },
+  {
+    "appName": "Pensions - Version 2.0",
+    "rootUrl": "/pensions-v2",
+    "entryName": "pensions-v2"
   }
 ]
