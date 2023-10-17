@@ -416,7 +416,7 @@ module.exports = async (env = {}) => {
         fs: 'pdfkit/js/virtual-fs.js',
         'iconv-lite': false,
       },
-      extensions: ['.js', '.jsx', '.tsx'],
+      extensions: ['.js', '.jsx', '.tsx', '.ts'],
       fallback: {
         fs: false,
         assert: require.resolve('assert/'),
