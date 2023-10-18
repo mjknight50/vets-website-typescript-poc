@@ -5,7 +5,11 @@
     "demo": "echo DEMOING $npm_package_name v $npm_package_version with WORKSPACES"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-config": "^5.0.8",
+    "@types/react-router-dom": "^5.3.3"
+  },
   "devDependencies": {
     "ts-loader": "9.4.4",
     "typescript": "5.2.2",
