@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, RouteProps, RouteComponentProps } from 'react-router-dom';
+import { Redirect, RouteProps } from 'react-router-dom';
 import formConfig from './config/form';
 import App from './PensionsV2App';
 
