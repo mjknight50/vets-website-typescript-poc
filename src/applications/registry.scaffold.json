@@ -128,8 +128,8 @@
     "entryName": "poc-ts"
   },
   {
-    "appName": "Pensions - Version 2.0",
-    "rootUrl": "/pensions-v2",
+    "appName": "Apply for Veterans Pension",
+    "rootUrl": "/pension-benefits/apply-for-veterans-pension-form-21P-527",
     "entryName": "pensions-v2"
   }
 ]
