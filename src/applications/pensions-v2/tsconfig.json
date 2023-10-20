@@ -4,6 +4,7 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "allowJs": true,
     "esModuleInterop": true,
     "moduleResolution": "node",

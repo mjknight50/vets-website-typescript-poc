@@ -6,9 +6,17 @@ interface UIObject {
   [key: string]: any; // Replace 'any' with the appropriate types
 }
 
-interface SchemaObject {
+interface SchemaObject<
+  TProperties = Record<string, any>, // Replace 'any' with the appropriate type
+  TRequired = string[]
+> {
   type: string;
-  properties: any[]; // Replace 'any' with the appropriate types
+  properties: TProperties;
+  items?: {
+    type: string;
+    properties: TProperties;
+    required?: TRequired;
+  };
 }
 
 interface UIPageSchema {

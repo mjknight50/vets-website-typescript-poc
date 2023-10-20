@@ -1,3 +1,10 @@
+// In a real app this would be imported from `vets-json-schema`:
+// import fullSchema from 'vets-json-schema/dist/21P-527EZ-schema.json';
+
+// In a real app this would not be imported directly; instead the schema that
+// is imported from vets-json-schema should include these common definitions:
+import commonDefinitions from 'vets-json-schema/dist/definitions.json';
+
 import IntroductionPage from '../containers/IntroductionPage';
 import ConfirmationPage from '../containers/ConfirmationPage';
 import nameAndDateOfBirth from '../pages/nameAndDateOfBirth';
@@ -5,6 +12,8 @@ import identificationInformation from '../pages/identificationInformation';
 import mailingAddress from '../pages/mailingAddress';
 import phoneAndEmailAddress from '../pages/phoneAndEmailAddress';
 import relationshipToVeteran from '../pages/relationshipToVeteran';
+import serviceHistory from '../pages/serviceHistory';
+
 import FormConfig from '../interfaces/FormInterface';
 // @ts-ignore
 import FormFooter from 'platform/forms/components/FormFooter';
@@ -38,7 +47,7 @@ const formConfig: FormConfig = {
   },
   title: 'Apply for pension benefits',
   subTitle: 'Form 21P-527EZ',
-  defaultDefinitions: {},
+  defaultDefinitions: commonDefinitions,
   chapters: {
     personalInformationChapter: {
       title: 'Your personal information',
@@ -60,6 +69,17 @@ const formConfig: FormConfig = {
           title: 'Relationship to Veteran',
           uiSchema: relationshipToVeteran.uiSchema,
           schema: relationshipToVeteran.schema,
+        },
+      },
+    },
+    militaryHistoryChapter: {
+      title: 'Military history',
+      pages: {
+        serviceHistory: {
+          path: 'service-history',
+          title: 'Section Title: Service History',
+          uiSchema: serviceHistory.uiSchema,
+          schema: serviceHistory.schema,
         },
       },
     },

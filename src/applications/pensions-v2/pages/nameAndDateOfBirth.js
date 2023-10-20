@@ -21,5 +21,6 @@ export default {
       fullName: fullNameSchema,
       dateOfBirth: dateOfBirthSchema,
     },
+    required: ['dateOfBirth'],
   },
 };
