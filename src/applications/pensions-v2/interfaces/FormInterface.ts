@@ -43,6 +43,8 @@ export default interface FormConfig {
   };
   v3SegmentedProgressBar: boolean;
   submit: () => Promise<{ attributes: { confirmationNumber: string } }>;
+  submitUrl?: string;
+  transformForSubmit?: () => {};
   trackingPrefix: string;
   introduction: typeof IntroductionPage;
   confirmation: typeof ConfirmationPage;
@@ -54,7 +56,7 @@ export default interface FormConfig {
     notFound: string;
     noAuth: string;
   };
-  title: string;
+  title: string | (() => string);
   subTitle: string;
   defaultDefinitions: any; // Replace 'any' with the appropriate type
   chapters: Chapters;
